@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #0f172a; /* Dark background for glow contrast */
+    color: #ffffff;
+    overflow: hidden; /* Prevent scrollbars during cursor movement */
+    /* background-color: #7995ab; */
+    height:min-content;
+}
+#trail {
+    position: fixed;
+    width: 600px; /* Glow width */
+    height: 600px; /* Glow height */
+    background: rgba(13, 156, 161, 0.25); /* Subtle teal glow */
+    border-radius: 50%; /* Circular shape */
+    pointer-events: none; /* Ensure it doesn't block clicks */
+    z-index: 0; /* Appear above other elements */
+    transform: translate(-50%, -50%); /* Precisely center the glow on cursor */
+    filter: blur(100px); /* Smooth glowing effect */
+    mix-blend-mode: color-dodge; /* Enhance the glow's interaction with background */
+  }
+  .main{
+    overflow: hidden;
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height:auto;
+    min-height: 100vh;
+  }
+  .sidebar{
+    height:750px;
+    width:500px;
+    /* background-color: #ffffff; */
+    margin-left:210px;
+    margin-top: 50px;
+    min-height: 100vh;
+    overflow: hidden;
+
+  }
+  h1{
+    font-size: 50px;
+    font-weight: 650;
+    margin-bottom: -10px;
+    color:#c4d6ec;
+  }
+  .sidebar .heading p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #c4d6ec;
+  }
+  .side-nav {
+    /* transform: translateY(-50%); */
+    margin-top: 120px;
+    width: 50px;
+  }
+  
+  .side-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between items */
+  }
+  
+  .side-nav li {
+    position: relative;
+  }
+  
+  .side-nav a {
+    text-decoration: none;
+    color: #8892b0; /* Muted link color */
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .side-nav a:hover {
+    color: #70a0c7; /* Bright green hover color */
+  }
+  
+  /* Underline Hover Animation */
+  .side-nav a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: #70a0c7; /* Bright green color */
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    left: 0;
+    bottom: -4px; /* Align underline below text */
+  }
+  
+  .side-nav a:hover::after {
+    width: 100%; /* Fully expand underline */
+  }
+  .links {
+    display: flex;
+    flex-direction: row; 
+    gap: 30px; 
+    margin-top: 150px;
+    align-items: left;
+    text-align: left;
+    justify-content: left;
+    margin-left: 0;
+  }
+  
+  .social-link {
+    display: flex;
+    width: 48px;
+    height: 48px;
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8; /* Subtle fade effect */
+    
+  }
+  
+  .social-link:hover {
+    transform: scale(1.2); /* Slight zoom-in effect */
+    opacity: 1; /* Fully visible on hover */
+  }
+  
+  /* Add the hover underline effect */
+  .social-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px; 
+    transition: width 0.3s ease;
+    position: absolute;
+    left: 0;
+  }
+  
+  .social-link:hover::after {
+    width: 100%; /* Expand underline on hover */
+  }
+  
+  /* Style SVG or Image Icons */
+  .social-link img, .social-link svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .mainbar{
+    height:100vh;
+    width:550px;
+    /* background-color: #ffffff; */
+    margin-left: 45px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    min-height: 100%;
+    flex:1;
+    max-height: calc(100vh-50px);
+  }
+  .mainbar p{
+    letter-spacing: 0.2px;
+    color:#7995ab;
+    line-height: 1.7;
+    font-size: 16px;
+
+  }
+  .section{
+    padding-top: 70px;
+    margin-bottom: 100px;
+    height: 50px;
+    padding-bottom: 0px;
+    margin:0;
+    margin-bottom: 50px;
+    gap:10px;
+  }
+  .card{
+    /* background-color: rgb(110, 250, 175); */
+    height:200px;
+    width: 546px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding-left: 4px;
+    /* background-color:white */
+    
+  }
+  .duration{
+    
+    /* background-color: #70a0c7; */
+    width:auto;
+    border-radius: 5px;
+    
+  }
+  .duration p{
+    font-size:13px;
+    color:#7d8998;
+    width:150px;
+    padding-top: 10px;
+
+  }
+.card-content{
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    padding-left: 10px;
+    font-weight: 500px;
+    padding-right: 5px;
+    line-height: 1.5;
+
+}
+.card-content h3{
+    color:rgb(109, 149, 201);
+
+}
+.card-content p{
+ margin-top:-10px; 
+    font-size: 14px;
+}
+.card a{
+    text-decoration: none;
+}
+.card:hover {
+    background-color: #4d608151; /* Light background on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+    /* transform: scale(1.02); Slight zoom for interaction feedback     */
+    /* border: 1px solid rgba(192, 192, 192, 0.121);  */
+}
+
+.resume{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+    width: auto;
+    text-decoration: none;
+}
+.resume p{
+    font-size: large;
+    text-decoration: none;
+    color:#4d608151
+}
+.resume a {
+    text-decoration: none ;
+    color: #33b7e7;
+}
+.projects-card{
+    height:200px;
+    width: 535px;
+    /* background-color: #ffffff; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.projects-card img{
+    aspect-ratio: 16/9;;
+    width: 160px;
+    height: 90px;   
+    margin:10px;
+    border-radius: 10px; 
+    display: flex;
+    flex-direction: row;
+    /* padding-top: 5px; */
+}
+.project-content{
+    /* background-color: #d36363; */
+    height:200px;
+    width: 350px;
+    flex-direction: row;
+    padding-left: 10px;
+}
+.project-content h3{
+    padding-top: -10px;
+    color: rgb(109, 149, 201);
+    font-size: 20px;
+    font-weight: 600;
+}
+.project-content a{
+    text-decoration: none;
+    color: #bcbcbc;
+    font-weight: 500;
+}
+.projects-card:hover {
+    background-color: #4d608151; /* Light background on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+}
+.filler{
+    height: 100px;
+    width: 100px;
+
+}
