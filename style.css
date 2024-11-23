@@ -190,6 +190,7 @@ body{
     
     /* background-color: #70a0c7; */
     width:auto;
+    height: auto;
     border-radius: 5px;
     
   }
@@ -215,7 +216,7 @@ body{
 
 }
 .card-content p{
- margin-top:-10px; 
+    margin-top:-10px; 
     font-size: 14px;
 }
 .card a{
@@ -413,6 +414,9 @@ body{
     padding-left: 30px;
     padding-top: -30px;
 } 
+.duration{
+  height:30px;
+}
 .duration p{
   font-size:13px;
   color:#7d8998;
@@ -420,8 +424,12 @@ body{
   padding-top: 10px;
   padding-left: 30px;
 }
-.card-content{
+.card-content h3{
+  padding-top: 10px;
 
+}
+.card-content{
+  padding-top: 5px;
   flex-direction: column;
   color: #000000;
   padding-left:0px;
@@ -443,7 +451,7 @@ body{
   color: #33b7e7;
 }
 .projects-card{
-  height:100%;
+  height:max-content;
   width: 100%;
   /* background-color: #ffffff; */
   border-radius: 10px;
@@ -455,10 +463,10 @@ body{
 
 }
 .projects-card img{
-  display: none;
-  aspect-ratio: 16/9;;
+
+  aspect-ratio: 16/9;
   width: 320px;
-  height: 180px;   
+  height: 100%;   
   margin:10px;
   border-radius: 10px; 
   display: flex;
