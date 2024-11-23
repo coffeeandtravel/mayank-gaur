@@ -321,7 +321,6 @@ body{
 
   }
   h1{
-    padding-top: 50px;
     font-size: 45px;
     font-weight: 600;
     color:#c4d6ec;
@@ -381,6 +380,8 @@ body{
     margin:0;
     gap:10px;
     margin-bottom: 0px;;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
   .mainbar p{
     letter-spacing: 0.2px;
@@ -454,6 +455,7 @@ body{
 
 }
 .projects-card img{
+  display: none;
   aspect-ratio: 16/9;;
   width: 320px;
   height: 180px;   
@@ -461,6 +463,8 @@ body{
   border-radius: 10px; 
   display: flex;
   flex-direction: row;
+  overflow-y: hidden;
+  overflow-x: hidden;
   /* padding-top: 5px; */
 }
 .project-content{
